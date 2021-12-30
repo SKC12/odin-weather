@@ -2,7 +2,7 @@ const key = "387ddd18a77c5487de024e38681b0ecc";
 
 async function getWeatherJSON(location) {
   const response = await fetch(
-    `http://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${key}`
+    `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${key}`
   );
 
   const json = await response.json();
