@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <script src="bundle.js" defer></script>
+</head>
+<body>
+    <div id="title">Weather Checker</div>
+    <div id="main">
+        <div id="input-container">
+            <label class='city-field'>
+                <span id="input-span">Search Location:</span>
+                <div id="field-container">
+                    <input id="input-field" placeholder="City name">
+                    <button id="input-button">&#128269</button>
+                </div>
+                <div id="toggle-container">
+                    <p class="toggle-label">Fº</p>
+                    <label class="switch">
+                        <input id="temp-switch" type="checkbox">
+                        <span class="slider round"></span> 
+                    </label>                    
+                    <p class="toggle-label">Cº</p>
+                </div>
+            </label>
+        </div>
+        <div id="output-container">
+            <div id="output">
+                <h2 id="city-name">Teste</h2>
+                <div id="left-and-right">
+                    <div id="left-output">
+                        <div id="min-max-container">
+                            <p id="min-temp">Min: 7ºC</p>
+                            <p id="max-temp">Max: 32ºC</p>
+                        </div>
+                        <h3 id="temp">20ºC</h3>
+                        <div id="feels-like-container">
+                            <p id="feels-like">Feels like: 22ºC</p>
+                        </div>
+                    </div>
+                    <div id="right-output">
+                        <p id="description">Clear</p>
+                        <img id="icon" src="http://openweathermap.org/img/wn/01d@2x.png">                        
+                        <p id="humidity">Humidity: 20%</p>
+    
+                    </div>
+                </div>
+                
+
+
+            </div>
+            
+        </div>
+    </div>        
+    
+    
+</body>
+</html>
