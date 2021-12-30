@@ -40,7 +40,7 @@ async function updateWeather(loc) {
     )}`;
     description.innerText = weather.description;
     humidity.innerText = `Humidity: ${weather.humidity}`;
-    icon.src = `http://openweathermap.org/img/wn/${weather.icon}@2x.png`;
+    icon.src = `https://openweathermap.org/img/wn/${weather.icon}@2x.png`;
   } catch (e) {
     alert("Invalid city name");
     throw e;
