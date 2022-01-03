@@ -5,6 +5,8 @@ async function getWeatherJSON(location) {
     `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${key}`
   );
 
+  console.log(response);
+
   const json = await response.json();
   //   console.log(json);
   const weather = {
